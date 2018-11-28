@@ -1,0 +1,14 @@
+sudo: false
+language: python
+
+matrix:
+  include:
+    - python: 3.4
+      env: TOXENV=py34-django{111,20}
+    - python: 3.5
+      env: TOXENV=py35-django{111,20,21}
+    - python: 3.6
+      env: TOXENV=py36-django{111,20,21}
+
+install: pip install tox
+script: tox
