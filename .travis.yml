@@ -28,4 +28,5 @@ matrix:
 install: pip install tox
 script: tox
 env:
-  - POST_COV=codecov -e TOXENV
+  global:
+    - POST_COV=codecov -e TOXENV
