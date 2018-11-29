@@ -1,0 +1,3 @@
+[run]
+source = django_transitive_dag
+omit = */apps.py
